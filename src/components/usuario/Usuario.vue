@@ -11,11 +11,6 @@
 import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
 export default {
     mixins: [irParaInicioMixin]
-    // methods: {
-    //     irParaInicio() {
-    //         this.$router.push('/')
-    //     }
-    // }
 }
 </script>
 
