@@ -2,7 +2,6 @@
 	<div id="app">
 		<h1>Rotas com VueRouter</h1>
 		<Menu />
-		<hr>
 		<router-view />
 	</div>
 </template>

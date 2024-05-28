@@ -12,18 +12,22 @@ export default new Router({
     mode: 'hash', // Isso remove o hash (#)  da URL -- history
     routes: [{
         path: '/',
+        name: 'Inicio',
         component: Inicio
     },
     {
-        path: '/usuario/usuario',
+        path: '/usuario/usuario/:id',
+        name: 'usuario',
         component: Usuario
     },
     {
         path: '/usuario/Informacoes',
+        name: 'informacoes',
         component: Informacoes
     },
     {
         path: '/configuracao',
+        name: 'configuracao',
         component: Ajuste
     }
     ]

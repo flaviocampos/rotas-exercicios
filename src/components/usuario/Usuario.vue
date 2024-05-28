@@ -8,12 +8,14 @@
 </template>
 
 <script>
+import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
 export default {
-    methods: {
-        irParaInicio() {
-            this.$router.push('/')
-        }
-    }
+    mixins: [irParaInicioMixin]
+    // methods: {
+    //     irParaInicio() {
+    //         this.$router.push('/')
+    //     }
+    // }
 }
 </script>
 
