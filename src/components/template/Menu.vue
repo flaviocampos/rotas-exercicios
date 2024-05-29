@@ -2,7 +2,8 @@
     <nav class="menu">
         <ul>
             <router-link tag="li" to="/" exact active-class="active"><a>Inicío</a></router-link>
-            <router-link tag="li" to="/usuario/usuario/10" active-class="active"><a>Usuário</a></router-link>
+            <router-link tag="li" to="/usuario/usuario/1" active-class="active"><a>Usuário 1</a></router-link>
+            <router-link tag="li" to="/usuario/usuario/2" active-class="active"><a>Usuário 2</a></router-link>
             <router-link tag="li" to="/usuario/informacoes" active-class="active"><a>informacoes</a></router-link>
             <router-link tag="li" to="/configuracao" active-class="active"><a>Configuração</a></router-link>
         </ul>
