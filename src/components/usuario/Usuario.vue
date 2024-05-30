@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
     <div class="usuario">
         <h2>Usuários</h2>
@@ -17,7 +18,7 @@ export default {
         }
     },
     watch: {
-        // eslint-disable-next-line
+
         $route(to, from) {
             this.id = to.params.id
         }
