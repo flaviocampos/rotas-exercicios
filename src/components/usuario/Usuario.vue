@@ -17,7 +17,7 @@ export default {
         }
     },
     watch: {
-
+        // eslint-disable-next-line
         $route(to, from) {
             this.id = to.params.id
         }
