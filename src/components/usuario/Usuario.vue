@@ -12,17 +12,17 @@
 <script>
 import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
 export default {
-    data() {
-        return {
-            id: this.$route.params.id
-        }
-    },
-    watch: {
+    // data() {
+    //     return {
+    //         id: this.$route.params.id
+    //     }
+    // },
+    // watch: {
 
-        $route(to, from) {
-            this.id = to.params.id
-        }
-    },
+    //     $route(to, from) {
+    //         this.id = to.params.id
+    //     }
+    // },
     props: ['id'],
     mixins: [irParaInicioMixin]
 }
