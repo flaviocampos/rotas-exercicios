@@ -23,6 +23,7 @@ export default {
             this.id = to.params.id
         }
     },
+    props: ['id'],
     mixins: [irParaInicioMixin]
 }
 </script>
