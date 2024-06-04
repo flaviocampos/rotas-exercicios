@@ -1,19 +1,13 @@
-/* eslint-disable */
 <template>
-    <div class="usuario">
-        <h2>Usuários</h2>
-        <hr>
-        <router-view />
+    <div>
+        <h3>Informações do Usuário</h3>
         <button sucesso @click="irParaInicio">Voltar</button>
-
-
     </div>
 </template>
 
 <script>
 import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
 export default {
-    props: ['id'],
     mixins: [irParaInicioMixin]
 
 }

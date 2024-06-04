@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Inicio from './components/Inicio'
-import Ajuste from './components/configuracao/Ajuste.vue'
-import Informacoes from './components/usuario/Informacoes'
+import Ajuste from './components/configuracao/Ajuste'
+
 import Usuario from './components/usuario/Usuario'
+import UsuarioDetalhe from './components/usuario/UsuarioDetalhe'
+import UsuarioEditar from './components/usuario/UsuarioEditar'
+import UsuarioLista from './components/usuario/UsuarioLista'
 
 
 Vue.use(Router)
@@ -16,15 +19,16 @@ export default new Router({
         component: Inicio
     },
     {
-        path: '/usuario/usuario/:id',
+        path: '/usuario',
         component: Usuario,
-        props: true
+        props: true,
+        children: [
+            { path: '', component: UsuarioLista },
+            { path: ':id', component: UsuarioDetalhe, props: true },
+            { path: ':id/editar', component: UsuarioEditar, props: true }
+        ]
     },
-    {
-        path: '/usuario/Informacoes',
-        name: 'informacoes',
-        component: Informacoes
-    },
+
     {
         path: '/configuracao',
         name: 'configuracao',
