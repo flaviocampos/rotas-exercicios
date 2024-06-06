@@ -4,18 +4,14 @@
         <h2>Usuários</h2>
         <hr>
         <router-view />
-        <button sucesso @click="irParaInicio">Voltar</button>
-
 
     </div>
 </template>
 
 <script>
-import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
+
 export default {
     props: ['id'],
-    mixins: [irParaInicioMixin]
-
 }
 </script>
 

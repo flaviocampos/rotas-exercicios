@@ -2,19 +2,18 @@
     <div class="usuario-lista">
         <h3>Lista de Usuários</h3>
         <ul>
-            <li class="item-lista">Usuário 01</li>
-            <li class="item-lista">Usuário 02</li>
-            <li class="item-lista">Usuário 03</li>
+            <router-link tag="li" to="/usuario/1" class="item-lista">Usuário 1</router-link>
+            <router-link tag="li" to="/usuario/2" class="item-lista">Usuário 2</router-link>
+            <router-link tag="li" to="/usuario/3" class="item-lista">Usuário 3</router-link>
         </ul>
-        <button sucesso @click="irParaInicio">Voltar</button>
+
     </div>
 </template>
 
 <script>
-import { irParaInicioMixin } from '@/mixins/irParaInicioMixin';
 export default {
     props: ['id'],
-    mixins: [irParaInicioMixin]
+
 }
 </script>
 
