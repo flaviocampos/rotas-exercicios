@@ -8,9 +8,9 @@ import UsuarioDetalhe from './components/usuario/UsuarioDetalhe'
 import UsuarioEditar from './components/usuario/UsuarioEditar'
 import UsuarioLista from './components/usuario/UsuarioLista'
 
+import Pagina404 from './components/Pagina404.vue'
 import Menu from './components/template/Menu.vue'
 import MenuIngles from './components/template/MenuIngles.vue'
-
 
 Vue.use(Router)
 
@@ -49,7 +49,17 @@ export default new Router({
             menuInferior: MenuIngles
         },
         //component: Ajuste
+    },
+    {
+        path: '/redirecionar',
+        redirect: '/usuario'
+    },
+    {
+        path: '*',
+        component: Pagina404
+        //redirect: '/'
     }
+
     ]
 
 })
