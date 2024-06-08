@@ -4,7 +4,9 @@
         <p><strong>Código:</strong> {{ id }}</p>
         <button sucesso @click="irParaUsuario">Voltar</button>
         <router-link tag="button" primario
-            :to="{ name: 'editarUsuario', params: { id }, query: { completo: false, lingua: 'Portuguesa' } }">
+            :to="{ name: 'editarUsuario', params: { id }, 
+            query: { completo: false, lingua: 'por' },
+            hash: '#rodape' }">
             Editar
         </router-link>
         <!-- Outras formas -->

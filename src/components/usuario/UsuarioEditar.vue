@@ -7,6 +7,9 @@
 
         <hr>
 
+        <div id="rodape">
+            <h3>Flavio - Curso VUE para entrar na pagina e via aqui em baixo!!!</h3>
+        </div>
         <button sucesso @click="irParaUsuario">Voltar</button>
     </div>
 </template>
@@ -25,4 +28,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#rodape {
+    margin-top: 1000px;
+}
+
+</style>
