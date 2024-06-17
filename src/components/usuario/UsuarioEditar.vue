@@ -6,6 +6,9 @@
         <p><strong>Lingua:</strong> {{ $route.query.lingua }}</p>
 
         <hr>
+        <div id="rodape">
+            <h3>Exemplo de Hash VUE</h3>
+        </div>
 
         <button sucesso @click="irParaUsuario">Voltar</button>
     </div>
@@ -25,4 +28,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#rodape {
+    margin-top: 1100px;
+}
+</style>
