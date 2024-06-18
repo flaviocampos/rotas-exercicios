@@ -6,10 +6,12 @@
         <p><strong>Lingua:</strong> {{ $route.query.lingua }}</p>
 
         <hr>
-        <div id="rodape">
-            <h3>Exemplo de Hash VUE</h3>
-        </div>
+        <button primario>Confirmar</button>
 
+
+        <div id="rodape">
+            <h3>Flavio - Curso VUE para entrar na pagina e via aqui em baixo!!!</h3>
+        </div>
         <button sucesso @click="irParaUsuario">Voltar</button>
     </div>
 </template>
